@@ -12,7 +12,12 @@ transferred from an old system to a new system. The old /etc/passwd
 and /etc/group are still available, but the user/group ids no longer
 match.
 
-# Usage
+## Requirements
+
+- Perl v5.20 or later (tested with v5.22, not verified with v5.20)
+- Unix - this program only supported Unix style ownership.
+
+## Usage
 
 `reown.pl [options] files-or-directories`
 
@@ -29,9 +34,9 @@ match.
 | `--verbose`          | Print each action to STDOUT before doing it         |
 | `--help`             | A usage message                                     |
 
-The most important options are the passwd file and group file to
-use. These must specify the user and group that the ids are mapped to,
-before they are mapped to the current user and group.
+The most important options are the `--passwd-file` and `--group-file`
+to use. These must specify the user and group that the ids are mapped
+to, before they are mapped to the current user and group.
 
 `--update-uids` and `--update-gids` are for specifying whether UIDs or
 GIDs will be updated. If neither is specified then both are assumed.

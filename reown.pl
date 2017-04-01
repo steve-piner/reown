@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-use v5.22;
+use v5.20;
 use strict;
 use warnings;
 use autodie;
