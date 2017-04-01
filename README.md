@@ -15,7 +15,7 @@ match.
 ## Requirements
 
 - Perl v5.20 or later (tested with v5.22, not verified with v5.20)
-- Unix - this program only supported Unix style ownership.
+- Unix - this program only supports Unix style ownership
 
 ## Usage
 
